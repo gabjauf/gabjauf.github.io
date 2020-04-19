@@ -11,6 +11,6 @@ export class Home extends React.Component {
           <Content />
         </Suspense>
       </div>
-    );
+    )
   }
 }

@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 export class Articles extends React.Component {
   render() {
-    return <h1>Blog</h1>;
+    return <h1>Blog</h1>
   }
 }
