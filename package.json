@@ -5,6 +5,9 @@
   "description": "Gabriel's personal website",
   "private": true,
   "dependencies": {
+    "@mdx-js/loader": "^2.2.1",
+    "@mdx-js/react": "^2.2.1",
+    "@next/mdx": "^13.1.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
