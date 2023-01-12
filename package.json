@@ -28,7 +28,7 @@
     "test-ci": "npx react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master",
+    "deploy": "gh-pages -d build -b gh-pages",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|graphql|md|mdx)\""
   },
   "husky": {
