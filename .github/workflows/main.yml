@@ -30,7 +30,7 @@ jobs:
       #   run: npm run test
 
       - name: Build
-        run: npm build
+        run: npm run build
 
       # Runs a set of commands using the runners shell
       - name: Deploy
