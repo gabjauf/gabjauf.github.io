@@ -1,5 +1,5 @@
-function HomePage() {
+function BlogPage() {
   return <div>Welcome to blog page!</div>
 }
 
-export default HomePage
+export default BlogPage
