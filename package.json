@@ -5,6 +5,7 @@
   "description": "Gabriel's personal website",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "@mdx-js/loader": "^2.2.1",
     "@mdx-js/react": "^2.2.1",
     "@next/mdx": "^13.1.1",
@@ -14,7 +15,8 @@
     "next": "^13.1.1",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.15.4"
   },
   "devDependencies": {
     "@types/react": "18.0.26",
