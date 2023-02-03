@@ -23,7 +23,7 @@ export default {
     16,
     20,
     24,
-    32,
+    36,
     48,
     64,
     96
@@ -37,10 +37,21 @@ export default {
     "body": 1.75,
     "heading": 1.25
   },
+  "radii": {
+    "default": "1em 1em 0.5em 1em",
+  },
+  "borders": {
+    "thick": "2px solid var(--theme-ui-colors-text, black)",
+    "thin": "1px solid var(--theme-ui-colors-text, black)"
+  },
+  "shadows": {
+    "default": "15px 24px 25px -18px rgba(0,0,0,.4)",
+    "hover": "2px 8px 10px -6px rgba(256, 256, 256,.4)"
+  },
   "colors": {
     "text": "#fff",
     "background": "#6461FF",
-    "primary": "#11e",
+    "primary": "#fff",
     "secondary": "#c0c",
     "highlight": "#e0e",
     "muted": "#f6f6ff",
@@ -48,8 +59,8 @@ export default {
       "light": {
         "text": "#fff",
         "background": "#6344FF",
-        "primary": "#0fc",
-        "secondary": "#0cf",
+        "primary": "#fff",
+        "secondary": "#6344FF",
         "highlight": "#f0c",
         "muted": "#011"
       }
@@ -138,7 +149,7 @@ export default {
     },
     "img": {
       "maxWidth": "100%"
-    }
+    },
   },
   text: {
     caps: {
@@ -149,6 +160,55 @@ export default {
       fontFamily: 'heading',
       fontWeight: 'heading',
       lineHeight: 'heading',
+    },
+  },
+  buttons: {
+    primary: {
+      // you can reference other values defined in the theme
+      color: 'background',
+      bg: 'primary',
+      padding: '0.2em 0.5em',
+      borderRadius: 'default',
+      "&:hover": {
+        "boxShadow": "hover"
+      },
+      "transition": "all 250ms ease",
+    },
+    secondary: {
+      color: 'text',
+      bg: 'secondary',
+    },
+    get tertiary() {
+      return {
+        ...this.secondary,
+        color: 'blue',
+      };
+    },
+    get callToAction() {
+      return {
+        ...this.primary,
+        fontFamily: 'heading',
+        "lineHeight": "heading",
+        "fontWeight": "heading",
+        "fontSize": 5
+      };
+    },
+  },
+  links: {
+    callToAction: {
+      textDecoration: 'none',
+      color: 'background',
+      bg: 'primary',
+      padding: '0.2em 0.5em',
+      borderRadius: 'default',
+      "&:hover": {
+        "boxShadow": "hover"
+      },
+      "transition": "all 250ms ease",
+      fontFamily: 'heading',
+      "lineHeight": "heading",
+      "fontWeight": "heading",
+      "fontSize": 5
     },
   }
 } as Theme
