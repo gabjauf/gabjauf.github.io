@@ -1,3 +1,6 @@
+import { Themed } from "@theme-ui/mdx"
+import BaseLayout from "../../components/layouts/base"
+
 export default function BlogPage() {
-  return <div>Welcome to blog page!</div>
+  return <BaseLayout><Themed.h1>Welcome to blog page!</Themed.h1></BaseLayout>
 }

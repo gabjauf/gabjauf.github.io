@@ -10,7 +10,7 @@ export default function Navbar() {
         Blog
       </NavLink>
       <NavLink href="/about" p={2}>
-        About
+        About me
       </NavLink>
     </Flex>
   </Container>
