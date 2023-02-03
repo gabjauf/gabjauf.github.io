@@ -1,8 +1,7 @@
 import Navbar from '../navbar'
-import Footer from '../footer'
 import { Container } from 'theme-ui'
 
-export default function BaseLayout({ children }) {
+export default function BaseLayout({ children }: {children: React.ReactNode}) {
   return (
     <Container p={4} sx={{
       width: ['100%', null, null, '64em'],
