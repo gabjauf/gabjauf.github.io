@@ -10,7 +10,15 @@ export default class extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/ZenTokyoZoo-regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+        </Head>
         <body>
           <InitializeColorMode />
           <Main />

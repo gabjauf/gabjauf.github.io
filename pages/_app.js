@@ -3,6 +3,7 @@ import * as React from "react";
 import NextApp from "next/app";
 import { ThemeProvider } from "theme-ui";
 import theme from "../utils/theme"; // theme object from step 2
+import './app.css';
 
 
 export default class App extends NextApp {
@@ -10,12 +11,6 @@ export default class App extends NextApp {
     const { Component, pageProps } = this.props;
     return (
       <ThemeProvider theme={theme}>
-        <style jsx>{`
-          @font-face {
-              font-family: 'Zen Tokyo Zoo';
-              src: url('/ZenTokyoZoo-regular.woff2');
-          }
-        `}</style>
         <Component {...pageProps} />
       </ThemeProvider>
     );
