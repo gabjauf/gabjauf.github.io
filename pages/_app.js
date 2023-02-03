@@ -13,7 +13,7 @@ export default class App extends NextApp {
         <style jsx>{`
           @font-face {
               font-family: 'Zen Tokyo Zoo';
-              src: url('font/ZenTokyoZoo-regular.woff2');
+              src: url('/font/ZenTokyoZoo-regular.woff2');
           }
         `}</style>
         <Component {...pageProps} />
