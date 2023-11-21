@@ -1,0 +1,44 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main class="container">
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="/hero.svg" class="max-w-md rounded-lg" alt="author avatar"/>
+          <div>
+            <h1>Hey, I'm Gabriel !</h1>
+            <p>
+              I am a full-stack engineer, eager and curious to learn about
+              everything!<br />
+            </p>
+            <p>
+              Right now, I am very interested in AI, reverse engineering, UX and
+              looking for new ways to make a bigger impact on the world.
+            </p>
+            <a
+              class="btn btn-secondary"
+              href="https://www.malt.fr/profile/gabrieljauffret?overview=true"
+              target={"_blank"}>Hire me!</a
+            >
+          </div>
+        </div>
+      </div>
+      <style>
+        .hero {
+          height: calc(100vh);
+        }
+      </style>
+    </main>
+  </body>
+</html>
