@@ -80,13 +80,16 @@ const posts = (await getCollection("blog")).sort(
           font-size: 1.563em;
         }
       }
+      .list-unstyled {
+        list-style: none;
+      }
     </style>
   </head>
   <body>
     <Header />
     <main class="container py-32">
       <section>
-        <ul>
+        <ul class="list-unstyled">
           {
             posts.map((post) => (
               <li>
