@@ -95,10 +95,11 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--text-color);
+	text-decoration: underline;
 }
 a:hover {
-	color: var(--accent);
+	color: var(--text-color);
 }
 p {
 	margin-bottom: 1em;
@@ -126,6 +127,7 @@ code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
+	color: var(--background-color)
 }
 pre {
 	padding: 1.5em;

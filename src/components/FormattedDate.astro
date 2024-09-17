@@ -1,17 +1,31 @@
 ---
+type DateStyle = "short" | "long";
 interface Props {
-	date: Date;
+  date: Date;
+  style?: DateStyle;
 }
 
-const { date } = Astro.props;
+const formatSettings = new Map<DateStyle, any>([
+  [
+    "short",
+    {
+      year: "numeric",
+      month: "short",
+    },
+  ],
+  [
+    "long",
+    {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    },
+  ],
+]);
+
+const { date, style = "long" } = Astro.props;
 ---
 
 <time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-us', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
+  {date.toLocaleDateString("en-us", formatSettings.get(style))}
 </time>
