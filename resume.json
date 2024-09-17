@@ -1,0 +1,400 @@
+{
+  "basics": {
+    "name": "Gabriel Jauffret",
+    "label": "Full-stack developer",
+    "picture": "",
+    "email": "",
+    "website": "",
+    "summary": "Engineer by training, I undertook 7 years ago now a career change to go towards what is now my passion, IT.  With a training at EPITA having given me deep knowledge both in low-level languages (C and C++, Go) and those used in the web (Javascript, Typescript, Python), I turned to web development at the end of my course in order to design ergonomic and efficient cloud applications.  After 4 years at Bloomflow, a startup that aims to revolutionize and industrialize creative innovation processes, having learned a lot about the mechanisms of disruptive innovation within a caring and talented team, I decided to embark on the entrepreneurial adventure by co-founding Toha, the application that influences future second-hand trends.",
+    "location": {
+      "address": "",
+      "postalCode": "H1A 0A1",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Tracklab",
+      "position": "Freelance web developer",
+      "website": "",
+      "startDate": "2024-01-01",
+      "summary": "Migration from bubble platform to a full-stack platform in NodeJS with scalability in mind. This mission included: - Development of features, including the design of architecture, that are iso-functional with previous platform. Features included search views with cross-table filters and sorting, summary views, CRUD operations, CRONs operations and asynchronous data synchronization. - Connection to external APIs for data enrichment - Setup of test harness on the backend (end-to-end and unit tests) - Process improvement in order to provide more visibility and clarity to tasks",
+      "highlights": [],
+      "endDate": "2024-05-01"
+    },
+    {
+      "company": "Sillant",
+      "position": "Chief Technology Officer",
+      "website": "",
+      "startDate": "2023-05-01",
+      "summary": "Entering as the CTO of an early stage startup, my objective was to reach the MVP as fast as possible. We underwent a lot of back and forth on the product with our prospects, and after first confirmations of interest, we settled on a verification and comparison engine for tender bids in the construction industry. This engine would ensure: - All bids respond to the construction work specification fully. Missing items are identified - Prices can be compared between identical items  A few of the challenges I had to overcome: - Table parsing from excel / pdf, including columns identification - Matching between identical items between tender bids to enable comparison - AI model deployments that would help in the matching (OCR, custom AI) - Reliable prompts (especially making them reliable and maintain them when OpenAI updated its models)",
+      "highlights": [],
+      "endDate": "2023-10-01"
+    },
+    {
+      "company": "Toha Live",
+      "position": "Chief Technology Officer",
+      "website": "",
+      "startDate": "2021-11-01",
+      "summary": "Toha is the new mobile and web app for second-hand fashion. Share your style and sell it through feed videos. Go live and meet your followers, give them some perks and engage them with auctions on your best pieces.  As CTO and co-founder, I am responsible for product strategy and development.",
+      "highlights": [],
+      "endDate": "2023-02-01"
+    },
+    {
+      "company": "bloomflow",
+      "position": "Full Stack Engineer",
+      "website": "",
+      "startDate": "2017-11-01",
+      "summary": "BloomFlow is a SaaS platform for mapping, managing, and monitoring open innovation projects with startups and partners. Some of the world’s leading innovators (HSBC, Nestlé, Capgemini, AXA, and many others) are using BloomFlow to build innovation portfolios, design operational processes, and generate automatic reporting.  As a fullstack engineer, with 3+ years of experience, I was responsible for developing new features for the product, contributing to making it more reliable and business solving everyday. #BuildTheRightThing #BuildItRight Our stack is built on the latest JavaScript technologies (Angular, Loopback, MoleculerJS), docker, MongoDB.  Learn more about our technology:  www.startupflow.io/integrations-and-safety",
+      "highlights": [],
+      "endDate": "2021-11-01"
+    },
+    {
+      "company": "mojjo",
+      "position": "Web Developer Internship",
+      "website": "",
+      "startDate": "2017-03-01",
+      "summary": "Developing of a web interface to ease the debug Mojjo's match analysis output. The corrected data would then serve as a reference for future improvements of the algorithm, helping the developer to enhance its accuracy. Technologies: NodeJS, AngularJS, Docker, Bootstrap, mongoDB",
+      "highlights": [],
+      "endDate": "2017-09-01"
+    },
+    {
+      "company": "Custom Sensors & Technologies (CST)",
+      "position": "Communication Internship in the Research Department",
+      "website": "",
+      "startDate": "2014-03-01",
+      "summary": "Settled in China for three months in order to improve intersite communication and cooperation. Participated in the development of a proximity sensor intended for the chinese nuclear market.",
+      "highlights": [],
+      "endDate": "2014-08-01"
+    },
+    {
+      "company": "Schneider Electric",
+      "position": "Laboratory Intern Engineer",
+      "website": "",
+      "startDate": "2013-02-01",
+      "summary": "Experimental design on the tribology of different couples of materials, with the study of wear and friction coefficient. Included test planning and realization, as well as the interpretation of the results obtained.",
+      "highlights": [],
+      "endDate": "2013-07-01"
+    },
+    {
+      "company": "Messier-Bugatti-Dowty",
+      "position": "Research and Technology Intern",
+      "website": "",
+      "startDate": "2012-02-01",
+      "summary": "Participated in the project management by issuing several project documents (included description of the project, objectives, schedule, budget). Released an interpreted TRL (Technology Readiness Levels, designed for technology maturity assessment) scale for each kind of research development, setting the objectives for forthcoming maturity review.",
+      "highlights": [],
+      "endDate": "2012-08-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "EPITA: Ingénierie Informatique",
+      "area": "",
+      "studyType": "Engineer’s Degree",
+      "startDate": "2015-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2017-01-01"
+    },
+    {
+      "institution": "ENSMM",
+      "area": "",
+      "studyType": "Engineer's Degree",
+      "startDate": "2010-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2014-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "NestJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeORM",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PyTorch",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "API OpenAI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Reconnaissance optique de caractères",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "FastAPI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "fastify",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Webrtc",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Stripe (Software)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Stripe Connect",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Vue.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Kubernetes",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Terraform",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Search Engine Optimization (SEO)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Analytics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Angular",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Elasticsearch",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Catia",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "ANSYS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Solidworks",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Finite Element Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Composites",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Project Planning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Matlab",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C++",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Visual Studio",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": ".NET Framework",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PTC Creo",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Maturity Assessments",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "ElasticSearch",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "angular",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Angular Material",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LoopBack.io",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Object-Oriented Programming (OOP)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C (Programming Language)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Docker Products",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python (Programming Language)",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native or bilingual proficiency"
+    },
+    {
+      "language": "French",
+      "fluency": "Native or bilingual proficiency"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Limited working proficiency"
+    },
+    {
+      "language": "Chinese",
+      "fluency": "Elementary proficiency"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Near duplicate content detector",
+      "startDate": "2016-09-01",
+      "summary": "A tool that takes in entry multiple urls which detects the near-duplicate content between them and returns a matrix of the duplicated content",
+      "url": "https://github.com/gabjauf/DuplicateContentMap"
+    }
+  ]
+}
