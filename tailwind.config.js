@@ -9,6 +9,7 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
+      'print': { 'raw': 'print' },
       // xl: '1280px',
     },
     borderRadius: {
