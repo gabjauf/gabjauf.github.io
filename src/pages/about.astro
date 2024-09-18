@@ -75,6 +75,34 @@ import FormattedDate from "../components/FormattedDate.astro";
           );
         })
       }
+      <h2>Education</h2>
+      {
+        data.education.map((education) => {
+          return (
+            <div class="card bg-secondary mb-4">
+              <div class="card-body text-base-100 print:p-0">
+                <div class="flex flex-wrap">
+                  <div>
+                    <h2 class="card-title">{education.institution}</h2>
+                    <em class="capitalize">{education.studyType}</em>
+                  </div>
+                  <span class="sm:ml-auto shrink-0">
+                    <FormattedDate
+                      date={new Date(education.startDate)}
+                      style={"year"}
+                    />
+                    →
+                    <FormattedDate
+                      date={new Date(education.endDate)}
+                      style={"year"}
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          );
+        })
+      }
     </div>
   </div>
 </Layout>

@@ -1,11 +1,17 @@
 ---
-type DateStyle = "short" | "long";
+type DateStyle = "short" | "long" | "year";
 interface Props {
   date: Date;
   style?: DateStyle;
 }
 
 const formatSettings = new Map<DateStyle, any>([
+  [
+    "year",
+    {
+      year: "numeric",
+    },
+  ],
   [
     "short",
     {
