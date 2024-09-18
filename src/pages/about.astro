@@ -6,51 +6,75 @@ import FormattedDate from "../components/FormattedDate.astro";
 
 <Layout title="About Me" description="Hey, I'm Gabriel 👋">
   <div class="flex flex-wrap justify-center gap-4 mb-4">
-    <div class="avatar">
-      <div class="mask mask-hexagon w-64">
-        <img
-          src="/profile.png"
-          class="rounded-lg"
-          alt="author avatar"
-        />
+    <div>
+      <div class="avatar">
+        <div class="mask mask-hexagon w-64">
+          <img src="/profile.png" class="rounded-lg" alt="author avatar" />
+        </div>
       </div>
+      <h3 class="text-center hidden print:block">Gabriel Jauffret</h3>
     </div>
     <div class="flex-1">
       <h1>Innovative Full-stack engineer for your <i></i>tech challenges</h1>
       <p>
-        Hi, I'm Gabriel, a full-stack engineer living in Montreal,CA currently
-        looking for a full-time job in a startup.
+        Hi, I'm Gabriel, a passionate full-stack engineer living in Montreal,CA
+        currently looking for a full-time job in a startup.
       </p>
     </div>
   </div>
-
-  <h2>Work Experience</h2>
-  {
-    data.work.map((workExperience) => {
-      return (
-        <div class="card bg-secondary mb-4">
-          <div class="card-body text-base-100 print:p-0">
-            <div class="flex flex-wrap">
+  <div class="flex flex-wrap gap-4">
+    <div class="w-64 space-y-4 sm:order-1 order-2 print:order-1">
+      <section>
+        <h3>Languages</h3>
+        {
+          data.languages.map((lang) => {
+            return (
               <div>
-                <h2 class="card-title">{workExperience.position}</h2>
-                <em class="capitalize">{workExperience.company}</em>
+                {lang.language}: {lang.fluency}
               </div>
-              <span class="sm:ml-auto shrink-0">
-                <FormattedDate
-                  date={new Date(workExperience.startDate)}
-                  style={"short"}
-                />
-                →
-                <FormattedDate
-                  date={new Date(workExperience.endDate)}
-                  style={"short"}
-                />
-              </span>
+            );
+          })
+        }
+      </section>
+      <!-- <section>
+        <h3>Skills</h3>
+        {
+          data.skills.map((skill) => {
+            return <span class="badge badge-outline mr-1">{skill.name}</span>;
+          })
+        }
+      </section> -->
+    </div>
+    <div class="flex-1 sm:order-2 order-1 print:order-2">
+      <h2>Work Experience</h2>
+      {
+        data.work.map((workExperience) => {
+          return (
+            <div class="card bg-secondary mb-4">
+              <div class="card-body text-base-100 print:p-0">
+                <div class="flex flex-wrap">
+                  <div>
+                    <h2 class="card-title">{workExperience.position}</h2>
+                    <em class="capitalize">{workExperience.company}</em>
+                  </div>
+                  <span class="sm:ml-auto shrink-0">
+                    <FormattedDate
+                      date={new Date(workExperience.startDate)}
+                      style={"short"}
+                    />
+                    →
+                    <FormattedDate
+                      date={new Date(workExperience.endDate)}
+                      style={"short"}
+                    />
+                  </span>
+                </div>
+                <p class="m-0">{workExperience.summary}</p>
+              </div>
             </div>
-            <p class="m-0">{workExperience.summary}</p>
-          </div>
-        </div>
-      );
-    })
-  }
+          );
+        })
+      }
+    </div>
+  </div>
 </Layout>
