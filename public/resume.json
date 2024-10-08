@@ -5,7 +5,7 @@
     "picture": "",
     "email": "",
     "website": "",
-    "summary": "Engineer by training, I undertook 7 years ago now a career change to go towards what is now my passion, IT.  With a training at EPITA having given me deep knowledge both in low-level languages (C and C++, Go) and those used in the web (Javascript, Typescript, Python), I turned to web development at the end of my course in order to design ergonomic and efficient cloud applications.  After 4 years at Bloomflow, a startup that aims to revolutionize and industrialize creative innovation processes, having learned a lot about the mechanisms of disruptive innovation within a caring and talented team, I decided to embark on the entrepreneurial adventure by co-founding Toha, the application that influences future second-hand trends.",
+    "summary": "Full-stack developer with over 7 years of experience building scalable web applications and leading innovative projects. I’ve held roles as CTO and co-founder, guiding startups from MVP development to market launch. My expertise spans full-stack development, AI-driven solutions, and cloud platforms, with a strong focus on delivering user-centric products. I’ve led the migration of platforms, developed SaaS tools for managing innovation, and built AI-powered engines for complex data comparison. Passionate about solving real-world problems through technology and driving impactful digital transformation.",
     "location": {
       "address": "",
       "postalCode": "H1A 0A1",
@@ -44,49 +44,13 @@
       "endDate": "2023-02-01"
     },
     {
-      "company": "bloomflow",
+      "company": "Bloomflow",
       "position": "Full Stack Engineer",
       "website": "",
       "startDate": "2017-11-01",
-      "summary": "BloomFlow is a SaaS platform for mapping, managing, and monitoring open innovation projects with startups and partners. Some of the world’s leading innovators (HSBC, Nestlé, Capgemini, AXA, and many others) are using BloomFlow to build innovation portfolios, design operational processes, and generate automatic reporting.  As a fullstack engineer, with 3+ years of experience, I was responsible for developing new features for the product, contributing to making it more reliable and business solving everyday. #BuildTheRightThing #BuildItRight Our stack is built on the latest JavaScript technologies (Angular, Loopback, MoleculerJS), docker, MongoDB.  Learn more about our technology:  www.startupflow.io/integrations-and-safety",
+      "summary": "As a full-stack developer, I was responsible for designing and implementing key features, always prioritizing the end-user experience. I developed a versatile skill set through my involvement in mentoring new team members, improving platform security, and enforcing coding best practices. I drove process improvements that accelerated product delivery and increased reliability, implementing unit tests and optimizing the agile methodology for the team. Additionally, I worked closely with the product team, offering technical guidance on product decisions, defining tools like product analytics, and specifying design systems to ensure cohesive and efficient development.",
       "highlights": [],
       "endDate": "2021-11-01"
-    },
-    {
-      "company": "mojjo",
-      "position": "Web Developer Internship",
-      "website": "",
-      "startDate": "2017-03-01",
-      "summary": "Developing of a web interface to ease the debug Mojjo's match analysis output. The corrected data would then serve as a reference for future improvements of the algorithm, helping the developer to enhance its accuracy. Technologies: NodeJS, AngularJS, Docker, Bootstrap, mongoDB",
-      "highlights": [],
-      "endDate": "2017-09-01"
-    },
-    {
-      "company": "Custom Sensors & Technologies (CST)",
-      "position": "Communication Internship in the Research Department",
-      "website": "",
-      "startDate": "2014-03-01",
-      "summary": "Settled in China for three months in order to improve intersite communication and cooperation. Participated in the development of a proximity sensor intended for the chinese nuclear market.",
-      "highlights": [],
-      "endDate": "2014-08-01"
-    },
-    {
-      "company": "Schneider Electric",
-      "position": "Laboratory Intern Engineer",
-      "website": "",
-      "startDate": "2013-02-01",
-      "summary": "Experimental design on the tribology of different couples of materials, with the study of wear and friction coefficient. Included test planning and realization, as well as the interpretation of the results obtained.",
-      "highlights": [],
-      "endDate": "2013-07-01"
-    },
-    {
-      "company": "Messier-Bugatti-Dowty",
-      "position": "Research and Technology Intern",
-      "website": "",
-      "startDate": "2012-02-01",
-      "summary": "Participated in the project management by issuing several project documents (included description of the project, objectives, schedule, budget). Released an interpreted TRL (Technology Readiness Levels, designed for technology maturity assessment) scale for each kind of research development, setting the objectives for forthcoming maturity review.",
-      "highlights": [],
-      "endDate": "2012-08-01"
     }
   ],
   "education": [
@@ -110,6 +74,16 @@
     }
   ],
   "skills": [
+    {
+      "name": "AngularJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
     {
       "name": "NestJS",
       "level": "",
