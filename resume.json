@@ -21,7 +21,7 @@
       "position": "Freelance web developer",
       "website": "",
       "startDate": "2024-01-01",
-      "summary": "Migration from bubble platform to a full-stack platform in NodeJS with scalability in mind. This mission included: - Development of features, including the design of architecture, that are iso-functional with previous platform. Features included search views with cross-table filters and sorting, summary views, CRUD operations, CRONs operations and asynchronous data synchronization. - Connection to external APIs for data enrichment - Setup of test harness on the backend (end-to-end and unit tests) - Process improvement in order to provide more visibility and clarity to tasks",
+      "summary": "Migration from bubble platform to a full-stack platform in NodeJS with scalability in mind. This mission included:\n - Development of features, including the design of architecture, that are iso-functional with previous platform. Features included search views with cross-table filters and sorting, summary views, CRUD operations, CRONs operations and asynchronous data synchronization.\n - Connection to external APIs for data enrichment\n - Setup of test harness on the backend (end-to-end and unit tests)\n - Process improvement in order to provide more visibility and clarity to tasks",
       "highlights": [],
       "endDate": "2024-05-01"
     },
@@ -30,7 +30,7 @@
       "position": "Chief Technology Officer",
       "website": "",
       "startDate": "2023-05-01",
-      "summary": "Entering as the CTO of an early stage startup, my objective was to reach the MVP as fast as possible. We underwent a lot of back and forth on the product with our prospects, and after first confirmations of interest, we settled on a verification and comparison engine for tender bids in the construction industry. This engine would ensure: - All bids respond to the construction work specification fully. Missing items are identified - Prices can be compared between identical items  A few of the challenges I had to overcome: - Table parsing from excel / pdf, including columns identification - Matching between identical items between tender bids to enable comparison - AI model deployments that would help in the matching (OCR, custom AI) - Reliable prompts (especially making them reliable and maintain them when OpenAI updated its models)",
+      "summary": "Entering as the CTO of an early stage startup, my objective was to reach the MVP as fast as possible. We underwent a lot of back and forth on the product with our prospects, and after first confirmations of interest, we settled on a verification and comparison engine for tender bids in the construction industry. This engine would ensure:\n - All bids respond to the construction work specification fully. Missing items are identified\n - Prices can be compared between identical items  A few of the challenges I had to overcome:\n - Table parsing from excel / pdf, including columns identification\n - Matching between identical items between tender bids to enable comparison\n - AI model deployments that would help in the matching (OCR, custom AI)\n - Reliable prompts (especially making them reliable and maintain them when OpenAI updated its models)",
       "highlights": [],
       "endDate": "2023-10-01"
     },
