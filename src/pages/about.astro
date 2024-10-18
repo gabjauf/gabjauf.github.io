@@ -2,28 +2,30 @@
 import Layout from "../layouts/Base.astro";
 import data from "../../public/resume.json";
 import FormattedDate from "../components/FormattedDate.astro";
+import SkillBadge from "../components/skill-badge.astro"
+
+const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Art 🎨", "Psychology 🧠", "Movies 🎬"];
 ---
 
 <Layout title="About Me" description="Hey, I'm Gabriel 👋">
   <div class="flex flex-wrap justify-center gap-4 mb-4">
-    <div>
-      <div class="avatar">
-        <div class="mask mask-hexagon w-64">
-          <img src="/profile.png" class="rounded-full" alt="author avatar" />
-        </div>
+    <div class="avatar print:hidden">
+      <div class="mask mask-hexagon w-64">
+        <img src="/profile.png" class="rounded-full" alt="author avatar" />
       </div>
-      <h3 class="text-center hidden print:block">Gabriel Jauffret</h3>
     </div>
     <div class="flex-1">
-      <h1>Innovative Full-stack engineer for your <i></i>tech challenges</h1>
+      <h2>Gabriel Jauffret</h2>
+      <h4><em>Full-stack developer</em></h4>
       <p>
-        Hi, I'm Gabriel, a passionate full-stack engineer living in Montreal, CA
-        currently looking for a full-time job in a startup.
+        Hi, I'm Gabriel, a passionate full-stack developer with 7 years of
+        experience, living in Montreal, CA.<br />I am currently looking for a
+        job as a lead or full-stack developer.
       </p>
     </div>
   </div>
   <div class="flex flex-wrap gap-4">
-    <div class="w-64 space-y-4 sm:order-1 order-2 print:order-1">
+    <div class="w-64 space-y-4 sm:order-1 order-2 print:order-1 sm:border-e-2">
       <section>
         <h3>Languages</h3>
         {
@@ -36,17 +38,70 @@ import FormattedDate from "../components/FormattedDate.astro";
           })
         }
       </section>
-      <!-- <section>
+      <section>
         <h3>Skills</h3>
+        <h4>Languages</h4>
         {
-          data.skills.map((skill) => {
-            return <span class="badge badge-outline mr-1">{skill.name}</span>;
+          data.skills
+            .filter((el) => el.keywords.includes("Language"))
+            .map((skill) => {
+              return (
+                <SkillBadge skill={skill}></SkillBadge>
+              );
+            })
+        }
+        <h4 class="mb-1 mt-2">Frameworks</h4>
+        {
+          data.skills
+            .filter((el) => el.keywords.includes("Framework"))
+            .map((skill) => {
+              return (
+                <SkillBadge skill={skill}></SkillBadge>
+              );
+            })
+        }
+        <h4 class="mb-1 mt-2">Databases</h4>
+        {
+          data.skills
+            .filter((el) => el.keywords.includes("Database"))
+            .map((skill) => {
+              return (
+                <SkillBadge skill={skill}></SkillBadge>
+              );
+            })
+        }
+        <h4 class="mb-1 mt-2">Infra</h4>
+        {
+          data.skills
+            .filter((el) => el.keywords.includes("Infra"))
+            .map((skill) => {
+              return (
+                <SkillBadge skill={skill}></SkillBadge>
+              );
+            })
+        }
+        <h4 class="mb-1 mt-2">Other</h4>
+        {
+          data.skills
+            .filter((el) => el.keywords.includes("Other"))
+            .map((skill) => {
+              return (
+              <SkillBadge skill={skill}></SkillBadge>
+              );
+            })
+        }
+      </section>
+      <section>
+        <h3>Hobbies</h3>
+        {
+          hobbies.map((hobbie) => {
+            return <span class="badge mr-1 mb-1">{hobbie}</span>;
           })
         }
-      </section> -->
+      </section>
     </div>
-    <div class="flex-1 sm:order-2 order-1 print:order-2">
-      <h2>Work Experience</h2>
+    <div class="flex-1 sm:order-2 order-1 print:order-2 print:bg-white">
+      <h2 class="print:text-base-100">Work Experience &#x1F4BC;</h2>
       {
         data.work.map((workExperience) => {
           return (
@@ -69,13 +124,26 @@ import FormattedDate from "../components/FormattedDate.astro";
                     />
                   </span>
                 </div>
-                <p class="m-0 whitespace-break-spaces">{workExperience.summary}</p>
+                <p class="m-0 whitespace-break-spaces">
+                  {workExperience.summary}
+                </p>
+                <p>
+                  {data.skills
+                    .filter((el) =>
+                      el.keywords.includes(workExperience.company)
+                    )
+                    .map((skill) => {
+                      return (
+                        <SkillBadge skill={skill} size="sm"></SkillBadge>
+                      );
+                    })}
+                </p>
               </div>
             </div>
           );
         })
       }
-      <h2>Education</h2>
+      <h2>Education 🎓</h2>
       {
         data.education.map((education) => {
           return (

@@ -1,0 +1,7 @@
+---
+const { skill, size = "md" } = Astro.props;
+---
+
+<span class={`badge badge-outline mr-1 mb-1 badge-${size}`}>
+  {skill.name}
+</span>

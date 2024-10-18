@@ -62,6 +62,16 @@ body {
 	font-size: 16px;
 	line-height: 1.7;
 }
+
+@media print {
+	body {
+		background: white;
+		print-color-adjust: exact;
+		color: #222;
+		font-size:80%;
+	}
+}
+
 h1,
 h2,
 h3,
@@ -174,4 +184,10 @@ ul, ol, menu {
 	list-style: unset;
 	margin: unset;
 	padding: 0 0 0 2em;
+}
+
+@layer utilities {
+  .color-adjust {
+    print-color-adjust: exact;
+  }
 }
