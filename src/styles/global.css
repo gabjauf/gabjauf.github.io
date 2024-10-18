@@ -191,3 +191,14 @@ ul, ol, menu {
     print-color-adjust: exact;
   }
 }
+
+@media print {
+	.email-link {
+		color: black;
+	}
+	
+	.email-link:hover {
+		color: black
+	}
+}
+

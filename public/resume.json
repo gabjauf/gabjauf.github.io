@@ -18,7 +18,7 @@
   "work": [
     {
       "company": "Tracklab",
-      "position": "Freelance web developer",
+      "position": "Freelance Full-stack developer",
       "website": "",
       "startDate": "2024-01-01",
       "summary": "Migration from bubble platform to a full-stack platform in NodeJS with scalability in mind. This mission included:\n - Development of features, including the design of architecture, that are iso-functional with previous platform. Features included search views with cross-table filters and sorting, summary views, CRUD operations, CRONs operations and asynchronous data synchronization.\n - Connection to external APIs for data enrichment\n - Setup of test harness on the backend (end-to-end and unit tests)\n - Process improvement in order to provide more visibility and clarity to tasks",
@@ -27,7 +27,7 @@
     },
     {
       "company": "Sillant",
-      "position": "Chief Technology Officer",
+      "position": "Co-founder & Chief Technology Officer",
       "website": "",
       "startDate": "2023-05-01",
       "summary": "Entering as the CTO of an early stage startup, my objective was to reach the MVP as fast as possible. We underwent a lot of back and forth on the product with our prospects, and after first confirmations of interest, we settled on a verification and comparison engine for tender bids in the construction industry. This engine would ensure:\n - All bids respond to the construction work specification fully. Missing items are identified\n - Prices can be compared between identical items.\n\nA few of the challenges I had to overcome:\n - Table parsing from excel / pdf, including columns identification\n - Matching between identical items between tender bids to enable comparison\n - AI model deployments that would help in the matching (OCR, custom AI)\n - Reliable prompts (especially making them reliable and maintain them when OpenAI updated its models)",
@@ -36,7 +36,7 @@
     },
     {
       "company": "Toha Live",
-      "position": "Chief Technology Officer",
+      "position": "Co-founder & Chief Technology Officer",
       "website": "",
       "startDate": "2021-11-01",
       "summary": "Toha is the new mobile and web app for second-hand fashion.\nShare your style and sell it through feed videos.\nGo live and meet your followers, give them some perks and engage them with auctions on your best pieces.\n\nAs CTO and co-founder, I was responsible for product strategy and development. Some of the biggest challenges I faced:\n- Creating conference-like live architecture based on webRTC\n- Crafting a minimalistic and intuitive UI that enables the user the buy products while still being able to watch the live video on mobile devices\n- Implementation of PostHog and Sentry to enable fast and accurate iterations on the product\n- Implementation of Stripe integration for payments\n- AWS based infrastructure with automated deployments",
@@ -45,7 +45,7 @@
     },
     {
       "company": "Bloomflow",
-      "position": "Full Stack Engineer",
+      "position": "Full-Stack Developer",
       "website": "",
       "startDate": "2017-11-01",
       "summary": "As a full-stack developer, I was responsible for designing and implementing key features, always prioritizing the end-user experience. I developed a versatile skill set through my involvement in mentoring new team members, improving platform security, and enforcing coding best practices. I drove process improvements that accelerated product delivery and increased reliability, implementing unit tests and optimizing the agile methodology for the team. Additionally, I worked closely with the product team, offering technical guidance on product decisions, defining tools like product analytics, and specifying design systems to ensure cohesive and efficient development.",

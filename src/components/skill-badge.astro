@@ -1,7 +1,22 @@
 ---
+type BadgeSize = "xs" | "sm" | "md" | "lg";
+
+interface Props {
+  size?: BadgeSize;
+  skill: {
+    name: string;
+  };
+}
+
 const { skill, size = "md" } = Astro.props;
+const sizes = {
+  xs: "badge-xs",
+  sm: "badge-sm",
+  md: "badge-md",
+  lg: "badge-lg",
+};
 ---
 
-<span class={`badge badge-outline mr-1 mb-1 badge-${size}`}>
+<span class={`badge badge-outline mr-1 mb-1 ${sizes[size]}`}>
   {skill.name}
 </span>

@@ -2,9 +2,18 @@
 import Layout from "../layouts/Base.astro";
 import data from "../../public/resume.json";
 import FormattedDate from "../components/FormattedDate.astro";
-import SkillBadge from "../components/skill-badge.astro"
+import SkillBadge from "../components/skill-badge.astro";
+import ObfuscatedEmail from "../components/obfuscated-email.astro";
 
-const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Art 🎨", "Psychology 🧠", "Movies 🎬"];
+const hobbies = [
+  "Tennis 🎾",
+  "Football ⚽",
+  "Guitar 🎸",
+  "Music 🎶",
+  "Art 🎨",
+  "Psychology 🧠",
+  "Movies 🎬",
+];
 ---
 
 <Layout title="About Me" description="Hey, I'm Gabriel 👋">
@@ -16,12 +25,20 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
     </div>
     <div class="flex-1">
       <h2>Gabriel Jauffret</h2>
-      <h4><em>Full-stack developer</em></h4>
-      <p>
-        Hi, I'm Gabriel, a passionate full-stack developer with 7 years of
-        experience, living in Montreal, CA.<br />I am currently looking for a
-        job as a lead or full-stack developer.
-      </p>
+      <div class="sm:flex w-full">
+        <div class="flex-1">
+          <h4><em>Full-stack developer</em></h4>
+          <p>
+            Hi, I'm Gabriel, a passionate full-stack developer with 7 years of
+            experience.<br />I am currently looking for a job as a lead or
+            full-stack developer.
+          </p>
+        </div>
+        <div class="flex sm:flex-col sm:items-end sm:ml-6 shrink-0 gap-2">
+          <span>📍 Montréal, CA</span>
+          <span>✉️ <ObfuscatedEmail /></span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="flex flex-wrap gap-4">
@@ -45,9 +62,7 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
           data.skills
             .filter((el) => el.keywords.includes("Language"))
             .map((skill) => {
-              return (
-                <SkillBadge skill={skill}></SkillBadge>
-              );
+              return <SkillBadge skill={skill} />;
             })
         }
         <h4 class="mb-1 mt-2">Frameworks</h4>
@@ -55,9 +70,7 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
           data.skills
             .filter((el) => el.keywords.includes("Framework"))
             .map((skill) => {
-              return (
-                <SkillBadge skill={skill}></SkillBadge>
-              );
+              return <SkillBadge skill={skill} />;
             })
         }
         <h4 class="mb-1 mt-2">Databases</h4>
@@ -65,9 +78,7 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
           data.skills
             .filter((el) => el.keywords.includes("Database"))
             .map((skill) => {
-              return (
-                <SkillBadge skill={skill}></SkillBadge>
-              );
+              return <SkillBadge skill={skill} />;
             })
         }
         <h4 class="mb-1 mt-2">Infra</h4>
@@ -75,9 +86,7 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
           data.skills
             .filter((el) => el.keywords.includes("Infra"))
             .map((skill) => {
-              return (
-                <SkillBadge skill={skill}></SkillBadge>
-              );
+              return <SkillBadge skill={skill} />;
             })
         }
         <h4 class="mb-1 mt-2">Other</h4>
@@ -85,9 +94,7 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
           data.skills
             .filter((el) => el.keywords.includes("Other"))
             .map((skill) => {
-              return (
-              <SkillBadge skill={skill}></SkillBadge>
-              );
+              return <SkillBadge skill={skill} />;
             })
         }
       </section>
@@ -114,17 +121,21 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
                   </div>
                   <span class="sm:ml-auto shrink-0">
                     <FormattedDate
-                      date={new Date(workExperience.startDate.replaceAll('-', '/'))}
+                      date={
+                        new Date(workExperience.startDate.replaceAll("-", "/"))
+                      }
                       style={"short"}
                     />
                     →
                     <FormattedDate
-                      date={new Date(workExperience.endDate.replaceAll('-', '/'))}
+                      date={
+                        new Date(workExperience.endDate.replaceAll("-", "/"))
+                      }
                       style={"short"}
                     />
                   </span>
                 </div>
-                <p class="m-0 whitespace-break-spaces">
+                <p class="m-0 whitespace-pre-line">
                   {workExperience.summary}
                 </p>
                 <p>
@@ -133,9 +144,7 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
                       el.keywords.includes(workExperience.company)
                     )
                     .map((skill) => {
-                      return (
-                        <SkillBadge skill={skill} size="sm"></SkillBadge>
-                      );
+                      return <SkillBadge skill={skill} size="sm" />;
                     })}
                 </p>
               </div>
@@ -156,12 +165,12 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
                   </div>
                   <span class="sm:ml-auto shrink-0">
                     <FormattedDate
-                      date={new Date(education.startDate.replaceAll('-', '/'))}
+                      date={new Date(education.startDate.replaceAll("-", "/"))}
                       style={"year"}
                     />
                     →
                     <FormattedDate
-                      date={new Date(education.endDate.replaceAll('-', '/'))}
+                      date={new Date(education.endDate.replaceAll("-", "/"))}
                       style={"year"}
                     />
                   </span>
