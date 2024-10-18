@@ -114,12 +114,12 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
                   </div>
                   <span class="sm:ml-auto shrink-0">
                     <FormattedDate
-                      date={new Date(workExperience.startDate)}
+                      date={new Date(workExperience.startDate.replaceAll('-', '/'))}
                       style={"short"}
                     />
                     →
                     <FormattedDate
-                      date={new Date(workExperience.endDate)}
+                      date={new Date(workExperience.endDate.replaceAll('-', '/'))}
                       style={"short"}
                     />
                   </span>
@@ -156,12 +156,12 @@ const hobbies = ["Tennis 🎾", "Football ⚽", "Guitar 🎸", "Music 🎶", "Ar
                   </div>
                   <span class="sm:ml-auto shrink-0">
                     <FormattedDate
-                      date={new Date(education.startDate)}
+                      date={new Date(education.startDate.replaceAll('-', '/'))}
                       style={"year"}
                     />
                     →
                     <FormattedDate
-                      date={new Date(education.endDate)}
+                      date={new Date(education.endDate.replaceAll('-', '/'))}
                       style={"year"}
                     />
                   </span>
