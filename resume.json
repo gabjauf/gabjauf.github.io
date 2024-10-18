@@ -39,7 +39,7 @@
       "position": "Chief Technology Officer",
       "website": "",
       "startDate": "2021-11-01",
-      "summary": "Toha is the new mobile and web app for second-hand fashion. Share your style and sell it through feed videos. Go live and meet your followers, give them some perks and engage them with auctions on your best pieces.  As CTO and co-founder, I am responsible for product strategy and development.",
+      "summary": "Toha is the new mobile and web app for second-hand fashion.\nShare your style and sell it through feed videos.\nGo live and meet your followers, give them some perks and engage them with auctions on your best pieces.\n\nAs CTO and co-founder, I was responsible for product strategy and development. Some of the biggest challenges I faced:\n- Creating conference-like live architecture based on webRTC\n- Crafting a minimalistic and intuitive UI that enables the user the buy products while still being able to watch the live video on mobile devices\n- Implementation of PostHog and Sentry to enable fast and accurate iterations on the product\n- Implementation of Stripe integration for payments\n- AWS based infrastructure with automated deployments",
       "highlights": [],
       "endDate": "2023-02-01"
     },
@@ -76,273 +76,322 @@
   "skills": [
     {
       "name": "AngularJS",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Framework",
+        "Frontend",
+        "Mojjo"
+      ]
     },
     {
       "name": "React.js",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Framework",
+        "Frontend",
+        "Sillant",
+        "Tracklab"
+      ]
     },
     {
       "name": "NestJS",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Framework",
+        "Backend",
+        "Tracklab"
+      ]
     },
     {
       "name": "PostgreSQL",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Database",
+        "Sillant",
+        "Tracklab"
+      ]
     },
     {
       "name": "TypeORM",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "ORM",
+        "Tracklab"
+      ]
     },
     {
       "name": "PyTorch",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "AI",
+        "Sillant"
+      ]
+    },
+    {
+      "name": "Huggingface",
+      "level": 1,
+      "keywords": [
+        "AI",
+        "Sillant"
+      ]
     },
     {
       "name": "Next.js",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Framework",
+        "Frontend",
+        "Sillant",
+        "Tracklab"
+      ]
     },
     {
       "name": "API OpenAI",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "AI",
+        "Sillant"
+      ]
     },
     {
-      "name": "Reconnaissance optique de caractères",
-      "level": "",
-      "keywords": []
+      "name": "OCR",
+      "level": 1,
+      "keywords": [
+        "AI",
+        "Sillant"
+      ]
     },
     {
       "name": "FastAPI",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Framework",
+        "Backend",
+        "Sillant"
+      ]
     },
     {
-      "name": "fastify",
-      "level": "",
-      "keywords": []
+      "name": "Fastify",
+      "level": 1,
+      "keywords": [
+        "Framework",
+        "Backend",
+        "Sillant",
+        "Toha Live"
+      ]
     },
     {
-      "name": "Webrtc",
-      "level": "",
-      "keywords": []
+      "name": "WebRTC",
+      "level": 1,
+      "keywords": [
+        "Toha Live"
+      ]
     },
     {
       "name": "Stripe (Software)",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Stripe Connect",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Other",
+        "Toha Live"
+      ]
     },
     {
       "name": "Vue.js",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Framework",
+        "Frontend",
+        "Toha Live"
+      ]
     },
     {
       "name": "Kubernetes",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Infra",
+        "Toha Live",
+        "Sillant"
+      ]
     },
     {
       "name": "Terraform",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Infra",
+        "Toha Live",
+        "Sillant"
+      ]
     },
     {
       "name": "Search Engine Optimization (SEO)",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Other",
+        "Toha Live"
+      ]
     },
     {
       "name": "Agile Methodologies",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Other",
+        "Bloomflow",
+        "Toha Live",
+        "Sillant",
+        "Tracklab"
+      ]
     },
     {
       "name": "Google Analytics",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Other",
+        "Toha Live"
+      ]
     },
     {
       "name": "Mobile Applications",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Toha Live"
+      ]
     },
     {
       "name": "Angular",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Elasticsearch",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Catia",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "ANSYS",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Solidworks",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Finite Element Analysis",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Composites",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Project Planning",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microsoft Office",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Matlab",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Framework",
+        "Frontend",
+        "Bloomflow"
+      ]
     },
     {
       "name": "C",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Language"
+      ]
     },
     {
       "name": "C++",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Visual Studio",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": ".NET Framework",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Language"
+      ]
     },
     {
       "name": "JavaScript",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Language"
+      ]
     },
     {
       "name": "Node.js",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "PTC Creo",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Maturity Assessments",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Language",
+        "Bloomflow",
+        "Toha Live",
+        "Sillant",
+        "Tracklab"
+      ]
     },
     {
       "name": "TypeScript",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Language",
+        "Bloomflow",
+        "Toha Live",
+        "Sillant",
+        "Tracklab"
+      ]
     },
     {
       "name": "ElasticSearch",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Database",
+        "Bloomflow"
+      ]
     },
     {
       "name": "Amazon Web Services (AWS)",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Infra",
+        "Toha Live",
+        "Sillant"
+      ]
+    },
+    {
+      "name": "Google Cloud Platform (GCP)",
+      "level": 1,
+      "keywords": [
+        "Infra",
+        "Tracklab"
+      ]
     },
     {
       "name": "MongoDB",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "angular",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Database",
+        "Bloomflow",
+        "Toha Live"
+      ]
     },
     {
       "name": "Angular Material",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Frontend",
+        "Bloomflow"
+      ]
     },
     {
       "name": "LoopBack.io",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Backend",
+        "Bloomflow"
+      ]
     },
     {
-      "name": "Cascading Style Sheets (CSS)",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Object-Oriented Programming (OOP)",
-      "level": "",
-      "keywords": []
+      "name": "CSS",
+      "level": 1,
+      "keywords": [
+        "Language"
+      ]
     },
     {
       "name": "Git",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "C (Programming Language)",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Other"
+      ]
     },
     {
       "name": "Docker Products",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Web Development",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Infra"
+      ]
     },
     {
       "name": "HTML",
-      "level": "",
-      "keywords": []
+      "level": 1,
+      "keywords": [
+        "Language"
+      ]
     },
     {
-      "name": "Python (Programming Language)",
-      "level": "",
-      "keywords": []
+      "name": "Python",
+      "level": 1,
+      "keywords": [
+        "Language"
+      ]
     }
   ],
   "languages": [
