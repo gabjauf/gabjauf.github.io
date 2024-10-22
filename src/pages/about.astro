@@ -23,41 +23,80 @@ const hobbies = [
         <img src="/profile.png" class="rounded-full" alt="author avatar" />
       </div>
     </div>
-    <div class="flex-1">
+    <div class="flex-1 sm:ml-4 print:ml-0">
       <h2>Gabriel Jauffret</h2>
       <div class="sm:flex w-full">
         <div class="flex-1">
           <h4><em>Full-stack developer</em></h4>
           <p>
-            Hi, I'm Gabriel, a passionate full-stack developer with 7 years of
-            experience.<br />I am currently looking for a job as a lead or
-            full-stack developer.
+            Typescript Full-stack developer with over 5+ years of experience
+            building scalable web applications and leading innovative projects.<br
+            /><br />I’ve held roles as CTO and co-founder, guiding startups from
+            MVP development to market launch. My expertise spans full-stack
+            development, AI-driven solutions, and cloud platforms, with a strong
+            focus on delivering user-centric products. I’ve led the migration of
+            platforms, developed SaaS tools for managing innovation, and built
+            AI-powered engines for complex data comparison. Passionate about
+            solving real-world problems through technology and driving impactful
+            digital transformation.
           </p>
         </div>
-        <div class="flex sm:flex-col sm:items-end sm:ml-6 shrink-0 gap-2">
-          <span>📍 Montréal, CA</span>
-          <span>✉️ <ObfuscatedEmail /></span>
-        </div>
+      </div>
+      <div class="flex items-center shrink-0 gap-4 flex-wrap">
+        <span>📍 Montréal, Canada</span>
+        <span>✉️ <ObfuscatedEmail /></span>
+        <a
+          href="https://github.com/gabjauf"
+          target="_blank"
+          rel="noopener noreferer"
+          class="flex items-center gap-1 print:text-base-100"
+        >
+          <span class="sr-only">Go to Astro's GitHub repo</span>
+          <svg
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+            width="16"
+            height="16"
+            astro-icon="social/github"
+            ><path
+              fill="currentColor"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            ></path></svg
+          >
+          https://github.com/gabjauf
+        </a>
       </div>
     </div>
   </div>
-  <div class="flex flex-wrap gap-4">
-    <div class="w-64 space-y-4 sm:order-1 order-2 print:order-1 sm:border-e-2">
-      <section>
-        <h3>Languages</h3>
-        {
-          data.languages.map((lang) => {
-            return (
-              <div>
-                {lang.language}: {lang.fluency}
-              </div>
-            );
+  <section class="mb-4">
+    <h3>Languages</h3>
+    <span>
+      {
+        data.languages
+          .map((lang) => {
+            return `${lang.language} (${lang.fluency})`;
           })
-        }
-      </section>
-      <section>
-        <h3>Skills</h3>
-        <h4>Languages</h4>
+          .join(", ")
+      }
+    </span>
+  </section>
+  <div class="space-y-4">
+    <!-- <section class="space-y-2">
+      <h2>Skills</h2>
+      <h4>
+        Languages
+        <span class="text-base">
+          {
+            data.languages
+              .map((lang) => {
+                return `${lang.language} (${lang.fluency})`;
+              })
+              .join(", ")
+          }
+        </span>
+      </h4>
+      <h4>
+        Programming languages
         {
           data.skills
             .filter((el) => el.keywords.includes("Language"))
@@ -65,7 +104,9 @@ const hobbies = [
               return <SkillBadge skill={skill} />;
             })
         }
-        <h4 class="mb-1 mt-2">Frameworks</h4>
+      </h4>
+      <h4 class="mb-1 mt-2">
+        Frameworks
         {
           data.skills
             .filter((el) => el.keywords.includes("Framework"))
@@ -73,7 +114,9 @@ const hobbies = [
               return <SkillBadge skill={skill} />;
             })
         }
-        <h4 class="mb-1 mt-2">Databases</h4>
+      </h4>
+      <h4 class="mb-1 mt-2">
+        Databases
         {
           data.skills
             .filter((el) => el.keywords.includes("Database"))
@@ -81,7 +124,9 @@ const hobbies = [
               return <SkillBadge skill={skill} />;
             })
         }
-        <h4 class="mb-1 mt-2">Infra</h4>
+      </h4>
+      <h4 class="mb-1 mt-2">
+        Infrastructure
         {
           data.skills
             .filter((el) => el.keywords.includes("Infra"))
@@ -89,7 +134,9 @@ const hobbies = [
               return <SkillBadge skill={skill} />;
             })
         }
-        <h4 class="mb-1 mt-2">Other</h4>
+      </h4>
+      <h4 class="mb-1 mt-2">
+        Other
         {
           data.skills
             .filter((el) => el.keywords.includes("Other"))
@@ -97,17 +144,9 @@ const hobbies = [
               return <SkillBadge skill={skill} />;
             })
         }
-      </section>
-      <section>
-        <h3>Hobbies</h3>
-        {
-          hobbies.map((hobbie) => {
-            return <span class="badge mr-1 mb-1">{hobbie}</span>;
-          })
-        }
-      </section>
-    </div>
-    <div class="flex-1 sm:order-2 order-1 print:order-2 print:bg-white">
+      </h4>
+    </section> -->
+    <section class="flex-1 sm:order-2 order-1 print:order-2 print:bg-white">
       <h2 class="print:text-base-100">Work Experience &#x1F4BC;</h2>
       {
         data.work.map((workExperience) => {
@@ -118,6 +157,9 @@ const hobbies = [
                   <div>
                     <h2 class="card-title">{workExperience.position}</h2>
                     <em class="capitalize">{workExperience.company}</em>
+                    <span class="capitalize text-gray-500">
+                      &#x2014; {workExperience.location}
+                    </span>
                   </div>
                   <span class="sm:ml-auto shrink-0">
                     <FormattedDate
@@ -135,10 +177,8 @@ const hobbies = [
                     />
                   </span>
                 </div>
-                <p class="m-0 whitespace-pre-line">
-                  {workExperience.summary}
-                </p>
-                <p>
+                <p class="m-0 whitespace-pre-line">{workExperience.summary}</p>
+                <div>
                   {data.skills
                     .filter((el) =>
                       el.keywords.includes(workExperience.company)
@@ -146,7 +186,7 @@ const hobbies = [
                     .map((skill) => {
                       return <SkillBadge skill={skill} size="sm" />;
                     })}
-                </p>
+                </div>
               </div>
             </div>
           );
@@ -180,6 +220,14 @@ const hobbies = [
           );
         })
       }
-    </div>
+    </section>
+    <section>
+      <h2>Hobbies</h2>
+      {
+        hobbies.map((hobbie) => {
+          return <span class="badge mr-1 mb-1">{hobbie}</span>;
+        })
+      }
+    </section>
   </div>
 </Layout>
