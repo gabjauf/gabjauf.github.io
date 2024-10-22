@@ -396,6 +396,16 @@
       "keywords": [
         "Language"
       ]
+    },
+    {
+      "name": "Github Actions",
+      "level": 3,
+      "keywords": [
+        "Infra",
+        "Sillant",
+        "Tracklab",
+        "Toha Live"
+      ]
     }
   ],
   "languages": [
