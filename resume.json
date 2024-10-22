@@ -406,6 +406,14 @@
         "Tracklab",
         "Toha Live"
       ]
+    },
+    {
+      "name": "CircleCI",
+      "level": 3,
+      "keywords": [
+        "Infra",
+        "Bloomflow"
+      ]
     }
   ],
   "languages": [
